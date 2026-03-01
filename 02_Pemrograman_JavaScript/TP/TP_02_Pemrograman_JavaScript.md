@@ -9,7 +9,7 @@ Tersedia di [index.js](./index.js)
 
 **Output**
 
-GAMBAR output
+![alt text](image.png)
 
 **Deskripsi Program**
 
