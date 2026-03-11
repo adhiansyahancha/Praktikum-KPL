@@ -1,0 +1,40 @@
+/*
+
+1. Preseden CSS
+2. Media query
+3. Jenis-jenis selektor yang dipilih dan penjelasan 
+
+*/
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kotak-input {
+    display: block;
+    resize: none;
+}
+
+p > span {
+    color: #6500fd;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+}
+
+/* class="container" */
+/* @media screen and (max-width: 500px) {
+    p > span {
+        color: #48fd00;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    p > span {
+        color: #fd7a00;
+        font-weight: bold;
+    }
+} */
