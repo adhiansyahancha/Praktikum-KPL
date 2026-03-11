@@ -1,11 +1,3 @@
-/*
-
-1. Preseden CSS
-2. Media query
-3. Jenis-jenis selektor yang dipilih dan penjelasan 
-
-*/
-
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -16,25 +8,38 @@ body {
 }
 
 p > span {
-    color: #6500fd;
+    color: coral;
     font-weight: bold;
 }
 
+span {
+    color: rgb(0, 255, 89);
+}
+
+#hf {
+    color: blue;
+}
+
 button {
-    display: block;
+    display: inline;
 }
 
-/* class="container" */
-/* @media screen and (max-width: 500px) {
-    p > span {
-        color: #48fd00;
-        font-weight: bold;
+@media screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 300px) {
-    p > span {
-        color: #fd7a00;
-        font-weight: bold;
+@media screen and (min-width: 768px) {
+    h1 {
+        text-align: right;
     }
-} */
+
+    p {
+        text-align: right;
+    }
+}

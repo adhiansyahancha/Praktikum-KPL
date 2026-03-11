@@ -1,44 +1,36 @@
-/**
- * 1. Demonstrasi DOM menghitung huruf, huruf besar, dan huruf kecil
- * 2. Penggunaan getElementById
- * 3. Penggunaaan addEventListener
- */
+// DOM Document Object Model
 
-/**
- * Ini adalah getElementById, bla bla bal
- */
 const elemenEditor = document.getElementById("editor-kecil");
 
 const elemenHf = document.getElementById("hf");
+
 const elemenHb = document.getElementById("hb");
 
 function hitungHuruf(event) {
-    // Ini akan menangkap nilai isi dari elemen yang dipilih
-    const teks = event.target.value;
+    // const inputIsi = elemenEditor.value.length;
+    const inputIsi = event.target.value;
 
-    // Hasilnya akan seperti ini: ['K', 'a', 't', 'a', ' ', 'K', ...]
-    const teksBaru = teks.split('');
+    // ['K', 'a', 't'. 'a', '-', ...]
+    const chr = inputIsi.split('');
 
-    let jumlahHuruf = 0;
+    let jumlahHurufSejati = 0;
     let jumlahHurufBesar = 0;
-
-    teksBaru.forEach(karakter => {
-        // \w -> alfanumerika
-        // \s -> spasi putih
-        const kriteriaSpasi = /\s+/;
-        if (kriteriaSpasi.test(karakter)) {
+    const spasi = /\s+/;
+    const besar = /[A-Z]/;
+    chr.forEach(karakter => {
+        if (spasi.test(karakter)) {
             return;
         }
 
-        const kriteriaHurufBesar = /[A-Z]+/;
-        if (kriteriaHurufBesar.test(karakter)) {
-            jumlahHurufBesar = jumlahHurufBesar + 1;
+        if (besar.test(karakter)) {
+            jumlahHurufBesar = jumlahHurufBesar + 1
         }
 
-        jumlahHuruf = jumlahHuruf + 1;
+        jumlahHurufSejati = jumlahHurufSejati + 1;
     });
 
-    elemenHf.textContent = jumlahHuruf;
+    elemenHf.textContent = jumlahHurufSejati;
+
     elemenHb.textContent = jumlahHurufBesar;
 }
 
