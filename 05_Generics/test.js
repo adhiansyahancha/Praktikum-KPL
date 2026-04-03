@@ -17,6 +17,8 @@ try {
     assert.deepStrictEqual(fb.fizzBuzz([]), [], "Tes 4 gagal lolos");
     console.log("✅ Tes 4 berhasil");
 
+    // assert.throws akan berhasil jika memang error (tips: pakai throw new)
+    // Asersinya akan gagal jika tidak error
     assert.throws(() => fb.fizzBuzz(1214));
     console.log("✅ Tes 5 berhasil");
 
