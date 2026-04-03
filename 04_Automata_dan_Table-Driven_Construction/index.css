@@ -1,0 +1,48 @@
+* {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+}
+
+.grup-h {
+    margin: 5px 0;
+}
+
+.grup-tg {
+    margin: 15px 0;
+}
+
+.bagian-utama {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.dark-mode {
+    background-color: #171b25;
+    color: #EBECF7;
+}
+
+.form-dark-mode {
+    background-color: #2e3443;
+    color: #EBECF7;
+}
+
+.sepia-mode {
+    background-color: #F4ECD8;
+    color: #5B4636;
+}
+
+.form-sepia-mode {
+
+}
+
+.kotak-input {
+    display: block;
+    resize: none;
+}
+
+button {
+    background-color: #29ddcc;
+    border: 0;
+    cursor: pointer;
+    padding: 4px;
+}
